@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <style>
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    }
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+    #main{
+    height: 100%;
+    width: 100%;
+    
+}
+#header{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    background-color: wheat;
+   
+}
+#left{
+    height: 100%;
+    width: 30%;
+    background-color: rgb(244, 244, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#right{
+    height: 100%;
+    width: 70%;
+    background-color: rgb(7, 7, 119);
+    color: white;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 30px;
+    
+}
+
+#right p{
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    
+}
+#right a{
+    text-decoration: none;
+    color: white;
+}
+    #project1{
+        width: 100%;
+        height: 25%;
+        padding-left: 20%;  
+        background-color: rgb(247, 245, 245);
+    }
+    #project1 h1{
+        font-size: 80px;
+        padding-top: 25px;
+    }
+    hr{
+    border: 0px solid  yellow; 
+    width: 20%;
+    padding-bottom: 10px;
+    background-color: yellow;
+    }
+    #content{ 
+        width: 100%;
+        padding: 0 20%;
+        height: 58%;
+        display: flex;
+    }
+    #text{
+        width: 50%;
+        height: 100%;
+        padding-right: 20px;
+        padding-top: 40px;
+    }
+    #text p{
+        font-size: large;
+    }
+    #image{
+        padding-top: 40px;
+        width: 50%;
+        height: 100%;      
+        object-fit: fill;
+    }
+    #image img{
+        width: 100%;
+        height: 100%;
+    }
+    @media(max-width:768px){
+    
+        #main h1{font-size: 22px;}
+        #main p{font-size: 14px;
+        line-height: 1.4;}
+        #header{
+        flex-direction: column;
+        text-align: center;
+    } 
+        #left{
+            width: 100%;
+        }
+        #right{
+        
+        align-items: center;
+        width: 100%;
+        gap: 2px;
+        word-wrap: break-word;
+        flex-direction: column;
+        flex-flow: wrap;
+    }
+    #project1{
+        height: auto;
+    }
+    #content{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+    @media(max-width:480px) {
+    #main h1{font-size: 20px;}
+    #main p{font-size: 12px;
+    line-height: 1.2;}
+    #header{
+        flex-direction: column;
+        text-align: center;
+    }  
+    #left{
+        width: 100%;
+    }
+    #right{
+        flex-direction: column;
+        flex-flow: wrap;
+        align-items: center;
+        width: 100%;
+        gap: 2px;
+        word-wrap: break-word;
+    }
+    #project1{
+        height: auto;
+    }
+    #content{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+</style>
+</head>
+<body>
+    <div id="main">
+         <div id="header">
+            <div id="left">
+                <div><img  height="80px" width="80px" src="https://yt3.googleusercontent.com/ytc/AIdro_mlTxp8DNNFaeVV4iJGKQKjhgN195kIqFEAhgp0oLHIQg=s900-c-k-c0x00ffffff-no-rj" alt=""></div>
+                <div><h1 style="font-size: 30px;">SPHERE</h1><P style="font-size: 26px;">CONSTRUCTIONS</P></div>
+            </div>
+            <div id="right">
+               <a href="majorProject.html#bgcimg"><P>HOME</P></a> <a href="majorProject.html#service"><P>SERVICES</P></a>  <a href="majorProject.html#about"><P>ABOUT</P></a><a href="majorProject.html#project"><P>PROJECTS</P></a>
+                 <a href="majorProject.html#contact"><P>CONTACT</P></a>
+            </div>
+        </div>
+    <div id="project1">
+        <h1>Project 3</h1>
+        <hr>
+    </div>
+    <div id="content">
+        <div id="text">
+            <p>This image captures the realization of our vision — a sleek, contemporary building with elegant lines, strong presence, and refined design. It embodies what Sphere Construction stands for: architectural excellence, functional beauty, and robust engineering. <br>
+
+Each facade, each glass panel, and each structural detail reflect our commitment to quality and innovation. The polished exterior and harmonious design show how we blend aesthetics and performance to create spaces that not only stand tall but also inspire. <br>
+
+From the drawing board to the final finishes, our process is driven by precision and client collaboration. This completed building is more than a structure — it's a statement of trust, craftsmanship, and forward thinking. <br>
+
+At Sphere Construction, we don’t just build; we deliver enduring landmarks that elevate surroundings and enrich communities. This image is a testament to our promise: when you partner with us, you receive more than construction — you receive a legacy in steel, glass, and vision.
+</p>
+        </div>
+        <div id="image">
+          <img src="https://www.proco.prolightsa.com/assets/images/683ed755c4f5e_3.png" alt="">
+        </div>
+    </div>
+    </div>
+</body>
+</html>

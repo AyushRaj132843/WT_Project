@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Projects</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="sidebar"><h2>Admin Panel</h2>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="users.html">Users</a></li>
+      <li><a href="settings.html">Settings</a></li>
+      <li style="padding-top: 90px;"><a href="index.html">logout</a></li>
+    </ul></div>
+  <div class="main-content">
+    <h1>Projects Management</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Project Name</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Building A</td>
+          <td>Ongoing</td>
+          <td>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <form class="add-form">
+      <h2>Add New Project</h2>
+      <input type="text" placeholder="Project Name" required>
+      <select>
+        <option>Ongoing</option>
+        <option>Completed</option>
+      </select>
+      <button type="submit">Add</button>
+    </form>
+  </div>
+</body>
+<script>
+document.querySelector('.add-form').addEventListener('submit', function(event) {
+  alert('Project added successfully');
+});
+</script>
+</html>
